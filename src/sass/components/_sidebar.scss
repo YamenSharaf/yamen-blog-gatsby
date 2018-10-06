@@ -1,0 +1,40 @@
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #303030;
+  color: #fafafa;
+  text-align: center;
+  padding: 3rem 1rem;
+  &__mugshot {
+    margin-top: -15rem;
+    margin-bottom: 2rem;
+    filter: grayscale(60%);
+    transition: all .5s ease-in-out;
+    &:hover {
+      filter: none;
+    }
+  }
+  &__ghostwriter {
+    margin-bottom: 1rem;
+  }
+
+  &__links {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-icon {
+    margin: 0 .3rem;
+    &:hover {
+      filter: invert(0.5);
+    }
+  }
+}
